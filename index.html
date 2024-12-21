@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Webpage</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">My Website</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <h1>Welcome to My Website</h1>
+        <p>Explore the world of design and creativity.</p>
+        <button id="learn-more-btn">Learn More</button>
+    </section>
+
+  
+
+
+  <!-- Photo Gallery Section -->
+  <section id="gallery" class="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="./assests/images/img1.jpg" alt="Image 1">
+      </div>
+      <div class="gallery-item">
+        <img src="./assests/images/img2.jpg" alt="Image 2">
+      </div>
+      <div class="gallery-item">
+        <img src="./assests/images/img3.jpg" alt="Image 3">
+      </div>
+      <div class="gallery-item">
+        <img src="./assests/images/img4.jpg" alt="Image 4">
+      </div>
+      <div class="gallery-item">
+        <img src="./assests/images/img5.jpg" alt="Image 5">
+      </div>
+      <div class="gallery-item">
+        <img src="./assests/images/img6.jpg" alt="Image 6">
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Blog Section -->
+  <section id="blog" class="blog">
+    <h2>Latest Blog Posts</h2>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <h3>1. The Future of Web Development: Trends to Watch</h3>
+        <p>Content: In this post, discuss the latest trends in web development such as advancements in JavaScript frameworks (e.g., React, Angular, Vue.js), the rise of serverless architectures, and the increasing importance of web accessibility and performance optimization. You can also touch upon the impact of AI, automation, and cloud technologies on the future of web development.</p>
+      </div>
+      <div class="blog-card">
+        <h3>2. The Importance of Responsive Design in Today's Web</h3>
+        <p>Content: Explain why responsive design is essential in today's digital world, where users access websites from a variety of devices with different screen sizes. Discuss techniques for creating a flexible layout using CSS Grid, Flexbox, and media queries. Emphasize the importance of user experience (UX) and how a responsive design improves accessibility and engagement.
+        </p>
+      </div>
+      <div class="blog-card">
+        <h3>3. Optimizing Website Performance for Better User Experience
+        </h3>
+        <p>Content: This post could cover various strategies for improving website performance, such as optimizing images, minifying CSS and JavaScript, using lazy loading, and implementing efficient caching mechanisms. You could also discuss the role of web vitals (like Core Web Vitals) in performance evaluation and how performance impacts user satisfaction, bounce rates, and SEO rankings.</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form" class="contact-form" novalidate>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Full Name" required autocomplete="on">
+          <small id="name-error" class="error-message"></small>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your Email Address" required autocomplete="on">
+          <small id="email-error" class="error-message"></small>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" autocomplete="on">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Message</legend>
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" placeholder="Message Subject">
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required autocomplete="on"></textarea>
+          <small id="message-error" class="error-message"></small>
+        </div>
+      </fieldset>
+      <button type="submit" class="submit-button">Send Message</button>
+    </form>
+  </section>
+  
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2024 My Website. All rights reserved.</p>
+  </footer>
+<script src="./js/script.js"></script>
+</body>
+</html>
